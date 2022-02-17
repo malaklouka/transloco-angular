@@ -1,0 +1,11 @@
+{
+  "hello": "transloco es",
+  "dynamic": "transloco {{value}}",
+  "home": "acceuil",
+  "header": "",
+  "login": "",
+  "todos": {
+    "submit": "",
+    "title": ""
+  }
+}

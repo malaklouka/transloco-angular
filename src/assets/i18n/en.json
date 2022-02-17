@@ -1,0 +1,19 @@
+{
+  "foo": "Foo",
+  "bar": "Bar",
+  "home": "aaaa",
+  "name": "My name is {{name}}",
+  "hello": "salut",
+  "title": "titre",
+  "key": "cle",
+  "header": "",
+  "login": "",
+  "todos": {
+    "submit": "",
+    "title": ""
+  },
+  "dashboard": {
+    "title": "Dashboard Title",
+    "desc": "Dashboard Desc"
+  }
+}

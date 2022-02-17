@@ -1,0 +1,36 @@
+<ng-container *transloco="let t">
+  <p>{{ t('dashboard.title') }}</p>
+
+  <h1 [title]="t('title')"></h1>
+</ng-container>
+
+<ng-container *transloco="let t">
+  <p>{{ t('foo') }}</p>
+
+  <h2 [title]="t('foo')"></h2>
+</ng-container>
+
+<ng-container *transloco="let t">
+  <p>{{ t('name', { name: 'Transloco' }) }}</p>
+</ng-container>
+
+<ng-container *transloco="let t; lang: 'es'">
+  <p>{{ t('hello') }}</p>
+
+</ng-container>
+<ng-container *transloco="let t; read: 'dashboard'">
+  <p>{{ t('title') }}</p>
+</ng-container>
+
+<ng-container *transloco="let t;">
+  <h1>{{ t('dashboard.title') }}</h1>
+  <p>{{ t('dashboard.desc') }}</p>
+</ng-container>
+
+
+
+<span transloco="home" translocoLang="es"></span>
+
+<ng-container *transloco="let t; scope: 'todos';">
+  <h1>{{ t('todos.header') }}</h1>
+</ng-container>
