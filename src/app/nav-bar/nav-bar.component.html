@@ -1,36 +1,16 @@
-<ng-container *transloco="let t">
-  <p>{{ t('dashboard.title') }}</p>
-
-  <h1 [title]="t('title')"></h1>
-</ng-container>
-
-<ng-container *transloco="let t">
-  <p>{{ t('foo') }}</p>
-
-  <h2 [title]="t('foo')"></h2>
-</ng-container>
-
-<ng-container *transloco="let t">
-  <p>{{ t('name', { name: 'Transloco' }) }}</p>
-</ng-container>
-
-<ng-container *transloco="let t; lang: 'es'">
-  <p>{{ t('hello') }}</p>
-
-</ng-container>
-<ng-container *transloco="let t; read: 'dashboard'">
-  <p>{{ t('title') }}</p>
-</ng-container>
-
-<ng-container *transloco="let t;">
-  <h1>{{ t('dashboard.title') }}</h1>
-  <p>{{ t('dashboard.desc') }}</p>
-</ng-container>
-
-
-
-<span transloco="home" translocoLang="es"></span>
-
-<ng-container *transloco="let t; scope: 'todos';">
-  <h1>{{ t('todos.header') }}</h1>
-</ng-container>
+<nav class="navbar navbar-dark navbar-expand-lg">
+  <a class="navbar-brand">Phrase</a>
+  <span class="spacer"></span>
+  <div class="btn-group" dropdown>
+    <button id="button-animated" dropdownToggle type="button" class="btn btn-link dropdown-toggle"
+      aria-controls="dropdown-animated"><i class="fa fa-globe" aria-hidden="true"></i> {{siteLanguage}}
+      <span class="caret"></span>
+    </button>
+    <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+      aria-labelledby="button-animated">
+      <li role="menuitem"><a class="dropdown-item" (click)="changeSiteLanguage('en')">English</a></li>
+      <li role="menuitem"><a class="dropdown-item" (click)="changeSiteLanguage('es')">Español</a></li>
+      <li role="menuitem"><a class="dropdown-item" (click)="changeSiteLanguage('de')">Deutsch</a></li>
+    </ul>
+  </div>
+</nav>
